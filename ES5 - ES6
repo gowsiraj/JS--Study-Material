@@ -1,0 +1,100 @@
+// let and const it is called as block scoped variable.
+// var is a global and functional scoped
+// const: constant value
+const days = 7;
+const PI = 3.14;
+console.log("PI")
+
+Example:
+let a = 18;
+if(true){
+    let a = 10;
+    console.log(a); 
+}
+console.log(a); 
+
+// Spread Operator
+// Syntax: ...
+//Application: expanding the array
+// it is applicable of string or an array
+// var arr = ["B54WD","FSD","Tamil"];
+// console.log(...arr);
+
+// Application: character array
+// var str = "Welcome";
+// var res = [...str];
+// console.log(res);
+
+// Combining the array
+// var arr1 = [1,2,3,4,5];
+// var arr2 = [6,7,8,9,10];
+// [1,2,3,4,5,6,7,8,9,10];
+// var res = [...arr1, ...arr2];
+// console.log(res);
+
+// Destructuring the Array
+// Destructuring is unpacking the array element into a bunch of variable
+// let arr = ["leo","das"];
+// let a = arr[0];
+// let b = arr[1];
+// let [s1,s2] = arr;
+// console.log(s1);
+// console.log(s2);
+
+// destructuring object
+// var obj = {
+//     firstName: "Thiru",
+//     age: 18,
+//     city: "Chennai"
+// }
+// console.log(obj.city);
+// var { firstName, age, city} = obj;
+// console.log(firstName);
+
+// Question
+// var a = 34;
+// var b = 35;
+// \n - next line
+// console.log("The sum of a and b is","\n", a+b);
+// The sum of a and b is
+// 69
+
+// Template Literals
+// help us to make the concatenation inside the output
+// statement much effective
+// Syntax
+// var a = 34;
+// var b = 35;
+// Backtick - on keyboard below ESC Button
+// console.log(`The sum of 
+// a and b is 
+// ${a+b}`);
+
+// Question
+// function sum(){
+
+// }
+// sum(1) // 1
+// sum(1,2) //3
+// sum(1,2,3,4) //10
+
+// function add(a,b){
+// let sum = 0;
+// for(var i=0; i<a.length; i++){
+//     sum=sum+a[i]; 
+// }
+// return a;
+// }
+// console.log(add(2,1));
+
+// function add(...a){
+//     // a is called as rest parameter
+//     // it is undefined
+//     // rest parameter is nothing but an array
+//   let sum = 0;
+//   for(var i=0; i<a.length; i++){
+//       sum=sum+a[i]; 
+//   }
+//   return sum;
+//   }
+//   console.log(add(1,2,3,4));
