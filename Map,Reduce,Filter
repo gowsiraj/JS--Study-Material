@@ -1,0 +1,97 @@
+https://pythontutor.com/render.html#mode=display
+
+Day - 7
+Map, Reduce and Filter
+
+var arr = [12,13,14,15];
+var res = [24,26,28,30];
+
+Step 1: for loop
+Step 2: arr[i]*2
+step 3: declare an empty array and push
+Step 4: print the res array
+
+1. Map Method
+* it will take function as a parameter
+* it is applicable only for arrays
+* it will be applied to each and every element of an array.
+* it will return the new array.
+
+Syntax: arr.map(function name);
+
+Example:
+var arr = [12,13,14,15];
+var res = arr.map((ele)=>ele*2);
+console.log(res);
+
+Task: 
+var arr = [{name: "john", age: 24},
+{name: "doe", age: 25}];
+
+increase: 5 age
+
+var arr = [{name: "john", age: 24},
+{name: "doe", age: 25}];
+
+var res = arr.map((ele)=>ele.age+5);
+console.log(res);
+
+2. Filter
+
+var arr = [1,2,3,4,5]
+var res = [2,4];
+
+Step 1: For loop
+Step 2: if condition arr[i]%2==0
+Step 3: Declare an empty array and push
+Step 4: Print the resultant array
+
+* Filter takes function as a parameter
+* it is applicable to the array
+* it will be applied on each and every element of an array
+* if a certain condition in the function is passed, then it will be pushed
+* or it be ignored
+* it also return the array.
+
+Example:
+var arr = [1,2,3,4,5]
+
+var res = arr.filter((ele)=>ele%2==0);
+console.log(res);
+
+Task: 
+var arr = [{name: "vijay", mark: 35},
+{name: "thiru", mark: 100}
+{name: "ravi", mark: 67}];
+
+mark greater than 50 = person name
+
+var arr = [{name: "vijay", mark: 35},
+           {name: "thiru", mark: 100},
+           {name: "ravi", mark: 67}];
+
+var res = arr.filter((ele)=>ele.mark>35);
+console.log(res);
+var result = res.map((ele)=>ele.name);
+console.log(result);
+
+3. Reduce
+
+var arr = [12,13,14,15];
+
+* reduce function takes the function a parameter.
+* apply function on each and every element of the array.
+* it will return a single element.
+* it will take sum of whole array.
+
+1st Case:
+acc: accumulator it refers initial value
+ele: element it refers to element of array.
+
+2nd Case: when initial value are given 0.
+
+var arr = [12,13,14,15];
+var res = arr.reduce((acc,ele)=> acc+ele, 6);
+console.log(res);
+
+Task: restcountries api link - less than 1lakh population
