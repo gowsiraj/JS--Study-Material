@@ -1,0 +1,101 @@
+Day 11 - CSS
+
+Table:
+
+ <thead> - table head
+ <tr> - table row
+ <th> - table header
+ <tbody> - table body
+ <td> - table data
+
+ Example:
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 | Learn HTML, CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <table>
+        <thead> 
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Batch</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td>Joe</td>
+            <td>B54</td>
+        </tr>
+            <tr>
+            <td>2</td>
+            <td>John</td>
+            <td>B53</td>
+        </tr>
+            <tr>
+            <td>3</td>
+            <td>Doe</td>
+            <td>B52</td>
+        </tr>
+            <tr>
+            <td>4</td>
+            <td>Js</td>
+            <td>B51</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+pseudo class: hover, active, visited, link
+
+--mouse over
+a:hover{
+    text-decoration: underline;
+}
+
+--clicked
+a:active{
+    color: aqua;
+}
+
+--visited
+a:visited{
+    color: brown;
+}
+
+--unvisited
+a:link{
+    color: brown;
+}
+
+Overflow:
+1. Visible
+2. Hidden
+3. Scroll
+4. Auto
+
+Example:
+.main{
+    border: 1px solid black;
+    padding: 12px;
+    height: 200px;
+    overflow: auto;
+}
+
+Task: Bio Data, h:100px, scroll
+Task: Using table Time table.
+
+* Gradients: it helps us to have the transition linear and radical gradient.
+            linear gradient will have default flow of top to bottom.
+            radical gradient will have the circle inside the box.
+
+Syntax: background-image: linear-gradient(direction/angle, starting color....ending color);
+                                          to right/120
+
+Example: background-image: linear-gradient(to bottom, red 70%, rgb(249, 225, 229) 30%);
