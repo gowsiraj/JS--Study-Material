@@ -1,0 +1,61 @@
+Flex Box:
+* Flexible Box
+* One dimensional layout model
+
+HTML Template:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 | Learn Flexbox, Grid</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="main">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+    </div>
+</body>
+</html>
+
+
+Container Property: 
+display, flex-direction, flex-wrap, row-gap, column-gap,
+justify-content, align-items, align-content.
+
+Example:
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+gap: 10px;
+justify-content: center; -> main axis x
+align-items: center; -> cross axis Y
+align-content: center; -> cross axis Y
+align-self: end;  -> cross axis Y
+
+https://flexboxfroggy.com/
+
+Flex-item Property:
+Order, flex-grow, flex-basis, align-self.
+
+.item1{
+    flex-basis: 50%;
+    background-color: aqua;
+}
+
+Grid: two dimensional
+
+Container Property:
+display: grid, grid-template-rows, column-gap, 
+
+.main{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 10px;
+    justify-content: center;  -> main axis x
+    align-content: center; -> cross axis Y
+}
+
+Grid Item Property:
+grid-column, justify-items, align-items, justify-self, align-self.
